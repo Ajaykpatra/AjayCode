@@ -1,0 +1,2 @@
+# AjayCode
+Daily code
