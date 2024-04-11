@@ -7,5 +7,5 @@
 // div.addEventListener("click",()=>{
 //     console.log("div")
 // })
-let sum = 2 + 2.15;
-console.log(sum);
+let total = 2 + 2.15;
+console.log(total);
