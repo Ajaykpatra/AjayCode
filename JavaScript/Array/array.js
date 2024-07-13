@@ -111,7 +111,19 @@
 // let mapArray=array.map((e)=>e*5);
 // console.log(mapArray);
 
+//............forEach()
 
+//The forEach() method calls a function and iterates over the elements of an array. The forEach() method can also be used on Maps and Sets.
+
+// let students = ['John', 'Sara', 'Jack'];
+
+// // using forEach
+// students.forEach(myFunction);
+
+// function myFunction(item) {
+
+//     console.log(item);
+// }
 
 
 

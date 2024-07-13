@@ -127,10 +127,41 @@
 //     j++;
 // }
 
+//How to make passing argument mandetory ?
+
+
+// function check(){
+//     throw new Error("param required");
+// }
+
+// function show(name=check()){
+//     //Name is required
+//     console.log(name);
+// }
+// show();
 
 
 
+//Check if any student is fail
 
+// const arr = [
+//     { id: 42, marks: 66 },
+//     { id: 67, marks: 53 },
+//     { id: 35, marks: 23 }
+// ];
+
+// const PASSING_MARKS = 33;
+
+// const isFailed = arr.some(function(element) {
+//     return element.marks < PASSING_MARKS;
+// });
+// console.log(isFailed); // Should print true, as there is at least one student with marks less than 33.
+
+
+//destructuring,rest operator
+
+// const[X,...Y]=[1,2,3,4];
+// console.log({X,Y});
 
 
 
