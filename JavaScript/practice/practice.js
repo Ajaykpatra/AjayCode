@@ -1,3 +1,4 @@
+
 // Q.01
 
 // function showData(){
@@ -68,7 +69,7 @@
 // Array splice() Example
 
 
-//let webDvlop = ["HTML", "CSS", "JS", "Bootstrap"];
+// let webDvlop = ["HTML", "CSS", "JS", "Bootstrap"];
 
 // console.log(webDvlop);
 
@@ -102,7 +103,7 @@
 
 
 
-//map()
+// map()
 
 // let arr1=[1,2,3];
 // let mapArray=arr1.map((e)=>e*3);
@@ -111,7 +112,7 @@
 // console.log(mapArray);
 
 
-//forEach
+// forEach
 // let arr2=[1,2,3];
 // arr2.forEach((e)=>{
 //     console.log(e*5);
@@ -119,7 +120,7 @@
 // })
 
 
-//While loop
+// While loop
 
 // let j=0;
 // while(j<1){
@@ -127,7 +128,7 @@
 //     j++;
 // }
 
-//How to make passing argument mandetory ?
+// How to make passing argument mandetory ?
 
 
 // function check(){
@@ -142,7 +143,7 @@
 
 
 
-//Check if any student is fail
+// Check if any student is fail
 
 // const arr = [
 //     { id: 42, marks: 66 },
@@ -158,15 +159,37 @@
 // console.log(isFailed); // Should print true, as there is at least one student with marks less than 33.
 
 
-//destructuring,rest operator
+// destructuring,rest operator
 
 // const[X,...Y]=[1,2,3,4];
 // console.log({X,Y});
 
+// Insert  'Z' at 0 index
+// const arr=["a","b","c"];
 
+// arr.unshift('z')
+// console.log(arr);
 
+// or
 
+// arr.splice(0,0,'z')
 
+// console.log(arr);
 
+// const arr1 =["hy"]
+// const arr2 =["hello","code"]
+// const arr3 =[...arr1,...arr2]
+// console.log(arr3);
+
+// Break Statement
+// break statement is used to terminate the loop
+// for (let i = 0; i <=5; i++) {
+//     if(i===3);{ break;
+//     }
+//     console.log(i);
+    
+// }
+
+//continue 
 
 
