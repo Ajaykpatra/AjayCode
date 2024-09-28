@@ -192,4 +192,17 @@
 
 //continue 
 
+//Q.......
 
+const obj={};
+const set1=new set();
+const set2=new set();
+
+set1.add(obj);
+set1.add(obj);
+
+set2.add({});
+set2.add({});
+
+console.log(set1.size);
+console.log(set2.size);
