@@ -184,7 +184,7 @@
 // Break Statement
 // break statement is used to terminate the loop
 // for (let i = 0; i <=5; i++) {
-//     if(i===3);{ break;
+//     if(i===3){ break;
 //     }
 //     console.log(i);
     
@@ -206,3 +206,4 @@
 
 // console.log(set1.size);
 // console.log(set2.size);
+
