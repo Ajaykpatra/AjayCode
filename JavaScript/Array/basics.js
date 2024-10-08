@@ -73,3 +73,28 @@
 // };
 
 
+//.........spread operator
+
+// const obj1={a:1,b:2};
+// const obj2={...obj1,c:3};
+// console.log(obj2); // { a: 1, b: 2, c:3}
+
+// const mergeobj={...obj1,d:4}
+// console.log(mergeobj);
+
+
+//....function argument
+// function sum(a,b,c){
+//     return a+b+c
+// }
+// const number=[1,2,3];
+// console.log(sum(...number)); // 6
+
+
+//.........Rest operator
+
+function sum(...numbers){
+    return numbers.reduce((acc,curr)=>acc+curr,0);
+
+}
+console.log(sum(1,2,3));
