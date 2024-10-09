@@ -106,3 +106,195 @@
 // null === 0 → false (strict equality checks both value and type, and they are different)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.........LET , CONST & VAR
+
+//1....Question: What will the following code output and why?
+
+// function testVar() {
+//     var x = 1;
+//     if (true) {
+//       var x = 2;  // Same variable!
+//       console.log(x);  // Output?//2
+//     }
+//     console.log(x);  // Output?//2
+//   }
+//   testVar();
+  
+
+  //Inside the if block, var does not have block scope, so the same variable x is redeclared.
+
+  //2. Question: What will the following code output and why?
+
+//   function testLet() {
+//     let x = 1;
+//     if (true) {
+//       let x = 2;  // Different variable (block-scoped)
+//       console.log(x);  // Output?
+//     }
+//     console.log(x);  // Output?
+//   }
+//   testLet();
+
+//   let is block-scoped, so inside the if block, it creates a new variable x local to the block.
+//   Output will be:
+//   2
+//   1
+
+//.........3. Question: What will the following code output and why?
+
+
+// function testHoisting() {
+//     console.log(x);  // Output?
+//     var x = 5;
+//   }
+//   testHoisting();
+  
+
+//   Variables declared with var are hoisted to the top, but they are initialized with undefined before assignment.
+
+//Output will be
+
+//undefined
+
+//..........4. Question: What will the following code output and why?
+
+// function testLetHoisting() {
+//     console.log(x);  // Output?
+//     let x = 5;
+//   }
+//   testLetHoisting();
+
+
+//   let is also hoisted, but it is in the Temporal Dead Zone (TDZ) until it is initialized.
+// Accessing x before initialization will result in a ReferenceError.
+// Output:
+
+// ReferenceError: Cannot access 'x' before initialization
+
+
+//.....5. Question: What will the following code output and why?
+
+// const a = 5;
+// a = 10;  // What happens here?
+
+// console.log(a);
+
+
+// const creates a constant, which means you cannot reassign a new value after initialization.
+// This will result in a TypeError:
+
+// TypeError: Assignment to constant variable.
+
+
+//........6. Question: What is the output of the following code?
+
+// if (true) {
+//     var x = 10;
+//   }
+//   console.log(x);  // Output?
+  
+//var is function-scoped or global-scoped, not block-scoped, so it is accessible outside the if block.
+
+// Output will be:
+
+// 10
+
+
+
+//.....7. Question: What is the output of the following code?
+
+// if (true) {
+//     let y = 20;
+//   }
+//   console.log(y);  // Output?
+
+
+  //let is block-scoped, so it is not accessible outside the if block.
+
+  //output
+  //ReferenceError: y is not defined
+
+//   8. Question: What will the following code output and why?
+
+// const obj = { name: "Alice" };
+// obj.name = "Bob";
+// console.log(obj);  // Output?
+
+
+
+//With const, the reference to the object cannot change, but the properties of the object can still be modified.
+
+//Output:
+
+//{ name: "Bob" }
+
+
+//.......9. Question: What is the output of this code and why?
+
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => {
+//       console.log(i);  // What will this log?
+//     }, 1000);
+//   }
+  
+
+//   var is function-scoped, and the loop does not create a new scope for each iteration. By the time the setTimeout callbacks execute, i has been incremented to 3
+
+//Output
+// 3
+// 3
+// 3
+//........10. Question: What is the output of this code and why?
+
+// for (let i = 0; i < 3; i++) {
+//     setTimeout(() => {
+//       console.log(i);  // What will this log?
+//     }, 1000);
+//   }
+  
+//   let is block-scoped, so a new i is created for each iteration of the loop. Each setTimeout will log the i value of its respective iteration.
+
+//Output
+
+// 0
+// 1
+// 2
+
+//.........11. Question: What will the following code output and why?
+
+// console.log(a);  // Output?
+// let a = 5;
+
+// let variables are hoisted but exist in the Temporal Dead Zone (TDZ) until the declaration is encountered. Accessing a before it's initialized throws a ReferenceError
+
+//OUTPUT
+// ReferenceError: Cannot access 'a' before initialization
+
+// 12. Question: What will be the output of this code?
+
+const x = 10;
+if (true) {
+  const x = 20;
+  console.log(x);  // Output?
+}
+console.log(x);  // Output?
+
+
+// const is block-scoped. The x inside the if block is a separate variable from the x outside.
+// Output will be:
+
+// 20
+// 10
