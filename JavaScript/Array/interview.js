@@ -285,12 +285,12 @@
 
 // 12. Question: What will be the output of this code?
 
-const x = 10;
-if (true) {
-  const x = 20;
-  console.log(x);  // Output?
-}
-console.log(x);  // Output?
+// const x = 10;
+// if (true) {
+//   const x = 20;
+//   console.log(x);  // Output?
+// }
+// console.log(x);  // Output?
 
 
 // const is block-scoped. The x inside the if block is a separate variable from the x outside.
@@ -298,3 +298,15 @@ console.log(x);  // Output?
 
 // 20
 // 10
+
+// console.log("5"+3);
+// console.log("5"-3);
+
+// "12"
+// console.log(+"12");
+
+// console.log(typeof NaN);
+// console.log(NaN===NaN);
+// console.log(NaN==NaN);
+
+
