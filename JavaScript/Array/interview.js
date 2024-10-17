@@ -298,7 +298,7 @@
 
 // 20
 // 10
-
+//....................................................
 // console.log("5"+3);
 // console.log("5"-3);
 
@@ -309,4 +309,27 @@
 // console.log(NaN===NaN);
 // console.log(NaN==NaN);
 
+
+
+//.....................
+
+// const str ="Hey js! You Are AMAZING";
+// const vowels=['a','e','i','o','u']
+// function countVowels(data){
+//   let count =0;
+
+//   data.toLowerCase().split("").forEach((ch)=>{
+//        vowels.includes(ch) && count++;
+//   })
+//   return count;
+// }
+
+// console.log(countVowels(str));
+
+
+
+//..........................................
+
+console.log(4+"4");
+console.log(8+ +"8");
 

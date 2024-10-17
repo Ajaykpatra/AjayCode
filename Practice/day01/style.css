@@ -1,0 +1,26 @@
+
+.a,.b,.c{
+    display: inline;
+}
+.a{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border:dotted 2px aqua;
+    
+}
+.b{
+    margin-left: 30px;
+    padding: 20px 20px;
+    border: double 2px rgb(169, 89, 245);
+    display:block;
+    width: 200px;
+    height: 30px;
+    text-align: left;
+}
+.c{
+    margin-right: 40px;
+    margin-left: 30px;
+    padding: 20px 20px;
+    border: double 2px rgb(169, 89, 245);
+    display:block;
+}

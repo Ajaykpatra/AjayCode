@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+.row{
+    background-color: rgb(166, 239, 239);
+    border: solid 1px rgb(80, 80, 224);
+    height: 150px;
+    font-size: 0px;
+}
+.col{
+    background-color: rgb(195, 155, 232);
+    border: solid 2px rgb(228, 93, 93);
+    display: inline-block;
+    height: 100%;
+    width: 33.33%;
+}
+.col2{
+    background-color: rgb(240, 157, 157);
+    border: solid 2px rgb(20, 20, 21);
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+.row2{
+    background-color: rgb(85, 227, 147);
+    border: solid 1px rgb(80, 80, 224);
+    height: 50%;
+    font-size: 0px;
+}
+.col3{
+    background-color: rgb(241, 181, 137);
+    border: solid 2px rgb(29, 201, 80);
+    display: inline-block;
+    height: 100%;
+    width: 33.33%;
+}
+.row3{
+    background-color: rgb(134, 120, 225);
+    border: solid 1px rgb(3, 3, 109);
+    height: 50%;
+    font-size: 0px;
+}
+.col4{
+    background-color: rgb(161, 161, 5);
+    border: solid 2px rgb(217, 159, 25);
+    display: inline-block;
+    height: 100%;
+    width:50%;
+
+}
+.row4{
+    background-color: rgb(30, 245, 245);
+    border: solid 1px rgb(21, 21, 241);
+    height:33.33%;
+    font-size: 0px;
+    
+}
+.col5{
+    background-color: rgb(101, 199, 101);
+    border: solid 2px rgb(226, 182, 80);
+    display: inline-block;
+    height: 100%;
+    width:50%;
+}
+.col6{
+    background-color: rgb(211, 100, 192);
+    border: solid 2px rgb(226, 182, 80);
+    display: inline-block;
+    height: 100%;
+    width:50%;
+}
