@@ -330,6 +330,69 @@
 
 //..........................................
 
-console.log(4+"4");
-console.log(8+ +"8");
+// console.log(4+"4");
+// console.log(8+ +"8");
+
+//............closure propety..............//
+
+// function init(){
+// var name="Ajay"  // Name is a local variable created by init
+// function  displayName(){  //displayname is the  inner function
+
+//   console.log(name);//use closure variable declared in the parent function
+
+// }
+// name="Avay"
+// return displayName;
+// }
+// let c=init();
+// c();
+
+
+
+
+
+// //.............................................
+
+//.......nested function also make a closure
+
+
+
+// function returnFunc(){
+//   const x=()=>{
+//     let a=1
+//     console.log(a);
+
+//     const y =()=>{
+//       //let a=2
+//        console.log(a);
+
+//       const z =()=>{
+//         //let a=3
+//         console.log(a); 
+//       }
+//       z()
+//   }
+//   a=999
+//   y()
+// }
+// return x
+// }
+// let a=returnFunc()
+// a()
+
+
+
+//.................
+
+// async function fetchData(){
+// return 1;
+
+// }
+// console.log(fetchData());
+
+
+//...............///........///...........///........
+
+
 
