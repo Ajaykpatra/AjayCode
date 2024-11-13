@@ -396,3 +396,27 @@
 
 
 
+//Q.  Write a function that returns the reverse of a string ? (v.imp)
+
+console.log((reverseString(str)));
+
+//Using for loop
+
+function reverseString(str){
+//initialize an empty string to
+//store thre reserved string
+
+  let reversed ="";
+  //iterate through the characters of the input string in reverse order
+  for(let i=str.length-1;i>=0;i--){
+
+    
+
+  }
+
+}
+
+
+
+
+

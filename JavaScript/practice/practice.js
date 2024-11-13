@@ -143,6 +143,7 @@
 
 
 
+
 // Check if any student is fail
 
 // const arr = [
@@ -206,4 +207,81 @@
 
 // console.log(set1.size);
 // console.log(set2.size);
+
+
+
+//write a function that return the longest word in the sentence.
+// console.log(findLongestWord("I love coding in javascript"));
+
+
+// function findLongestWord(sentence) {
+//     let words = sentence.split(' ');
+//     let longestWord="";
+//     for(let word of words)
+//     {
+//         if(word.length>longestWord.length){
+//             longestWord=word;
+//      }
+
+//         }
+//         return  longestWord;
+
+//       
+
+
+//................Write a function that checks wheather the given string is a palindrome or not ?
+
+
+//a palindrome is a word that reads the same forward and backword
+
+//check for palindrome
+// console.log(isPalindrome("racecar"));
+
+// function isPalindrome(str){
+//     //step 1:Reverse the string
+//     const reversedStr=str.split("").reverse().join("");
+//     //step 2:check if the reversed string is equal to the original string   
+
+//     return str===reversedStr;
+// }
+
+
+//..............Async and await...............
+
+// async function fetchData() {
+//     try {
+//       const data = await new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//           resolve("Data loaded successfully");
+//         }, 2000);
+//       });
+//       console.log(data);  // "Data loaded successfully"
+//     } catch (error) {
+//       console.error(error);
+//     } finally {
+//       console.log("Operation complete");
+//     }
+//   }
+  
+//   fetchData();
+
+
+  //............promise............
+
+//   const fetchData = () => {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         resolve("Data loaded successfully");
+//       }, 1000);
+//     });
+//   };
+  
+//   fetchData()
+//     .then(data => console.log(data))  // "Data loaded successfully"
+//     .catch(error => console.error(error))
+//     .finally(() => console.log("Operation complete"));
+  
+  
+
+ 
 
