@@ -138,6 +138,36 @@ img{
 
 
 
+/* Mobile View: Media Queries */
+@media (max-width: 768px) {
+    .imgContainer {
+        flex-direction: column;
+    }
+
+    .slide_div {
+        flex: 0 0 100%;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .button {
+        width: 8px;
+        height: 8px;
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+
 
 
 
